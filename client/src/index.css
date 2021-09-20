@@ -7,3 +7,34 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: #eee;
 }
+
+#main {
+  padding-left: 50px;
+}
+
+#add-book {
+  background: rgb(248, 248, 248);
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  border: 1px solid gray;
+}
+
+#add-book .field {
+  margin-top: 10px;
+  width: 100%;
+}
+#add-book  input, select {
+  display: block;
+}
+#add-book label {
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
+#add-book button {
+  margin-top: 10px;
+}

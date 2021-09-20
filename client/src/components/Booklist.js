@@ -1,17 +1,12 @@
 import {
   useQuery,
-  gql,
 } from "@apollo/client";
-const GET_BOOKS = gql` {
-  books {
-    name,
-    genre
-  }
-}`;
+import { getBooksQuery } from "../queries/queries";
+import BookDetails from "./BookDetails";
 
-function Booklist() {
-  const { loading, error, data } = useQuery(GET_BOOKS);
-  const displayBook = () => {
+const Booklist = () => {
+  const { loading, error, data } = useQuery(getBooksQuery);
+  const displayBooks = () => {
     if (loading) return 'Loading...';
     if (error) return `Error! ${error.message}`;
     return (
@@ -26,7 +21,8 @@ function Booklist() {
   }
   return (
     <div>
-      {displayBook()}
+      {displayBooks()}
+      <BookDetails />
      </div>
   );
 }
