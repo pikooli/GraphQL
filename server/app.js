@@ -17,7 +17,6 @@ mongoose.connection.once('open', () => {
 
 app.use(cors());
 app.use('/graphql', (req, res, next) => {
-  console.log(req)
   next();
 },
 graphqlHTTP({
