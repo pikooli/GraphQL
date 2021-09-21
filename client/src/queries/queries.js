@@ -11,13 +11,14 @@ const getAuthorsQuery = gql` {
 
 const getBooksQuery = gql` {
   books {
+    id,
     name,
     genre
   }
 }`;
 
-const getBookQuery = gql` 
-  query ($id: ID!) 
+const getBookQuery = gql`
+  query ($id: ID)
   {
     book(id: $id){
       id,
