@@ -4,10 +4,13 @@ Learning Graphql with the excellent tuto of <a href="https://www.youtube.com/wat
 
 This tuto make you do a Booklist with the name, genre and author.
 
-It make with :
+You can list all book, create new book and see the details of a book.
+
+It was made with :
   - ReactJS
   - Apollo
   - Graphql
   - Nodejs
+  - MongoDB
 
 <image src="screen.png">
