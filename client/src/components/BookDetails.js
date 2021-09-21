@@ -27,7 +27,7 @@ const BookDetails = ({bookId}) => {
     )
   }
   return (
-    <div id="bookdetails">
+    <div id="book-details">
       {displayBookDetails()}
      </div>
   );
