@@ -5,7 +5,7 @@ Learning Graphql with the excellent tuto of <a href="https://www.youtube.com/wat
 This tuto make you do a Booklist with the name, genre and author.
 
 It make with :
-  - React
+  - ReactJS
   - Apollo
   - Graphql
   - Nodejs
